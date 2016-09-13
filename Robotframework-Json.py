@@ -3,7 +3,7 @@ import json
 def read_json_file(pathToJson):
     """Return json contents as string of the given json path"""
 
-    with open('data.json', 'r') as fp:
+    with open(pathToJson, 'r') as fp:
         data = json.load(fp)
         return data
 
